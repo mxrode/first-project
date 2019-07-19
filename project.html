@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Project</title>
+    <meta name="description"
+      content="Serwis prezentuje subiektywne top 5 seriali telewizyjnych. Sprawdź czy znasz je wszystkie." />
+    <meta name="keywords" content="top 5, serial, seriale, najlepsze, ciekawe, oglądaj, kinomaniak" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="topnav">
+      <ul class="nav">
+        <li><a class="active" href="#omnie">Home</a></li>
+        <li><a class="active" href="#galeria">Galeria</a></li>
+        <li><a class="active" href="#contact">Contact</a></li>
+        <li><a class="active" href="#about">About</a><br /><br /></li>
+      </ul>
+    </div>
+    <header>
+
+
+      <h1>WELCOME</h1>
+
+
+      <div style="padding-left:16px">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />
+          Ut bibendum neque quis condimentum fermentum. Vivamus imperdiet ligula eu ligula ullamcorper.</p>
+      </div>
+
+      <hr width="100%"> 
+
+    </header>
+
+    <main>
+      <section class="first" id="omnie">
+
+        <div class="box1">
+          <img src="natura.jpg" />
+
+        </div>
+
+        <div class="box2">
+          <div class="tekst">
+              <h2>Voluptatem Accusantium</h2>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Aenean sit amet hendrerit est.
+            Ut bibendum neque quis condimentum fermentum.
+            Vivamus imperdiet ligula eu ligula ullamcorper,
+            sit amet maximus lectus tristique.
+            Ut elementum neque vitae massa maximus aliquet ac vel justo.
+            Morbi eu lobortis ipsum, volutpat rhoncus urna. Ut metus tortor,
+            efficitur eu libero nec, molestie pellentesque enim.
+            Fusce malesuada volutpat turpis, eget tempor urna lobortis quis.
+            Duis varius tempus commodo.
+            Pellentesque eget convallis nisi.
+            Vivamus venenatis eros a interdum viverra.
+
+            Donec eu elementum felis, non suscipit urna.
+            Nulla vehicula nulla non ligula rutrum, non posuere odio lacinia.
+            Aliquam rutrum ante a augue venenatis facilisis.
+            Vivamus nec luctus urna. Nunc a commodo mauris.
+            Fusce eget nisl elit. Mauris lobortis purus arcu,
+            eu vestibulum velit porta vitae.
+            Duis in est a enim porta dictum non quis lacus.
+            Quisque at lacinia urna. Vestibulum sed velit malesuada,
+            elementum arcu in, fermentum magna. Nullam mattis,
+            urna non laoreet faucibus, velit magna tristique odio,
+            quis eleifend tortor tortor eget nisi.
+            Nam eget massa ac arcu finibus viverra ac sed lectus.
+            Proin vitae ullamcorper mi, rutrum gravida urna.
+            Curabitur ac venenatis turpis.
+            Fusce pellentesque metus vel sollicitudin dignissim.
+            Fusce in tellus sit amet nulla posuere.</div>
+
+      </section>
+      <div class="parallaxa"></div>
+      <section id="galeria" class="flex-c-c-c">
+
+        <div class="row">
+          <div class="column">
+            <img src="img_nature_wide.jpg" style="width:100%" onclick="openModal();currentSlide(1)"
+              class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="img_snow_wide.jpg" style="width:100%" onclick="openModal();currentSlide(2)"
+              class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="img_mountains_wide.jpg" style="width:100%" onclick="openModal();currentSlide(3)"
+              class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="img_lights_wide.jpg" style="width:100%" onclick="openModal();currentSlide(4)"
+              class="hover-shadow cursor">
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+
+            <div class="mySlides">
+              <div class="numbertext">1 / 4</div>
+              <img src="img_nature_wide.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 4</div>
+              <img src="img_snow_wide.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 4</div>
+              <img src="img_mountains_wide.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 4</div>
+              <img src="img_lights_wide.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+
+            <div class="column">
+              <img class="demo cursor" src="img_nature_wide.jpg" style="width:100%" onclick="currentSlide(1)"
+                alt="Nature and sunrise">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img_snow_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)"
+                alt="Mountains and fjords">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)"
+                alt="Northern Lights">
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+      <div class="parallaxa"></div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <br /><br />
+        <center>Polityka Prywatności &COPY; Copyright Martyna</center>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
+  </body>
+
+</html>
